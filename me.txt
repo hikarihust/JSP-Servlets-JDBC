@@ -36,4 +36,8 @@ Installing Tomcat on MS Windows
     Verify the Installation: http://localhost:8080/
     services.msc -> service(local) -> Apache Tomcat 9.0 Tomcat9 -> Start or Stop
     Stop it and we will start it via Eclipse later 
+Installing Eclipse on MS Windows
+    https://www.eclipse.org/downloads/packages/
+    Eclipse IDE for Enterprise Java and Web Developers
+    eclipse-jee-2022-03-R-win32-x86_64.zip  -> unzip and copy eclipse folder to C Driver
     
