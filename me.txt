@@ -1,0 +1,23 @@
+                                    Getting Started with JSP
+
+Setting Up the Development Environment Overview
+    Must Have Java Development Kit (JDK)
+    We Must Have the Java Development Kit (JDK) Installed
+        -> Visit Oracle’s website to download and install JDK not the JRE
+    To Build JSP Applications, we need the following:
+        1. Java Application Server -> Tomcat Server
+        2. Java Integrated Development Environment (IDE) -> Eclipse
+    java jdk 9
+    https://www.oracle.com/java/technologies/javase/javase9-archive-downloads.html
+        jdk-9.0.4_windows-x64_bin.exe
+        jre-9.0.4_windows-x64_bin.exe
+        -> After that check installed C:\Program Files\Java
+    Set Environment Variable
+        Control Panel -> System and Security -> System -> Advanced System Setting
+        In "System Variable" go to "Path" then add Java jdk and Java jre
+            C:\Program Files\Java\jdk-9.0.4\bin
+            C:\Program Files\Java\jre-9.0.4\bin
+        System Variable -> Add
+            Name: JAVA_HOME
+            Value: C:\Program Files\Java\jdk-9.0.4
+    After all cmd to check installed: java --version
