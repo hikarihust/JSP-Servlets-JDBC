@@ -21,3 +21,19 @@ Setting Up the Development Environment Overview
             Name: JAVA_HOME
             Value: C:\Program Files\Java\jdk-9.0.4
     After all cmd to check installed: java --version
+Installing Tomcat on MS Windows
+    Tomcat Version:
+        New version of Tomcat 10 was released to support Jakarta EE 9(around February, 2021)
+        In this release they renamed the packages, javax.* to jakarta.*
+        This is a breaking change for java EE apps
+        We will use Tomcat 9
+    https://tomcat.apache.org/ -> https://tomcat.apache.org/download-90.cgi
+        32-bit/64-bit Windows Service Installer (pgp, sha512)
+    When install -> Select the type of install: Full
+    Username: admin 
+    Password: admin
+    Turn of option "Show Readme"
+    Verify the Installation: http://localhost:8080/
+    services.msc -> service(local) -> Apache Tomcat 9.0 Tomcat9 -> Start or Stop
+    Stop it and we will start it via Eclipse later 
+    
