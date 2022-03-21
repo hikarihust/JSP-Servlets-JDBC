@@ -52,4 +52,26 @@ Connecting Eclipse to Tomcat
     Apache folder and scroll to select Tomcat 9
         Tomcat installation directly: Tell Eclipse where Tomcat is installed
             C:\Program Files\Apache Software Foundation\Tomcat 9.0
+
+    ==================================================================================================================
+
+                        JSP Fundamentals
+
+JSP Hello World
+    What is a JSP file?
+        An HTML page with some Java code sprinkled in
+        Include dynamic content from Java code
+    Where is the JSP processed?
+        JSP is processed on the server
+        Results of Java code included in HTML returned to browser
+    Where to place JSP file?
+        The JSP file goes in our webapp folder
+        Must have .jsp extension
+    File -> New -> Dynamic Web Project
+    webapp -> New -> File -> create helloworld.jsp
+    Build to run:
+        Right click on helloworld.jsp -> Run as -> Run on server
+    The server canot be started because one or more of the ports are invalid
+        Servers -> server.xml -> Server -> port -> change -1 to 8081
+    http://localhost:8080/jspdemo/helloworld.jsp
     
