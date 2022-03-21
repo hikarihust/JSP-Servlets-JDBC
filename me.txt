@@ -101,4 +101,17 @@ HTML Forms Overview
 Drop-Down Lists
 Radio Buttons
 Checkboxes
+
+    ==================================================================================================================
+
+                        State Management with JSP
+
+Tracking user actions with Sessions - Overview
+    JSP session is created once for user's browser session. Unique for this user
+    Commonly used when you need to keep track of the user's actions
+    JSP Session - Other useful methods
+    isNew() : boolean Returns true if the session is new
+    getId() : String Returns the session id
+    invalidate() : void Invalidates this session and unbinds any object associated with it
+    setMaxInactiveInterval(long mills) : void Sets the idle time for a session to expire. The value is supplied in milliseconds
     
