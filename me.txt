@@ -115,3 +115,32 @@ Tracking user actions with Sessions - Overview
     invalidate() : void Invalidates this session and unbinds any object associated with it
     setMaxInactiveInterval(long mills) : void Sets the idle time for a session to expire. The value is supplied in milliseconds
     
+    ==================================================================================================================
+
+                        JSP Standard Tag Library(JSTL) - Core Tags
+
+Install JSTL JAR files
+    Five tag libraries in JSTL: 
+        Core
+        Messages Formatting I18N
+        Functions
+        XML
+        SQL
+    File -> New -> Dynamic Web Project -> create tagdemo
+    download: 
+        https://mvnrepository.com/artifact/org.glassfish.web/javax.servlet.jsp.jstl/1.2.1
+        https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/javax.servlet.jsp.jstl-api/1.2.1
+        javax.servlet.jsp.jstl-1.2.1.jar
+        javax.servlet.jsp.jstl-api-1.2.1.jar
+    And then copy to: tagdemo/src/main/webapp/WEB-INF/lib
+    Every page that uses the Core tags must include this reference:
+        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    test.jsp
+        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+        <html>
+        <body>
+        <c:set var="stuff" value="<%= new java.util.Date() %>" />
+        Time on the server is ${stuff}
+        </body>
+        </html>
+    
