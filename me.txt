@@ -90,4 +90,5 @@ Calling a Java Class from JSP
     Refactor this into a separate Java class … make use of MVC
     src/main/java -> New -> Package -> com.luv2code.jsp
     com.luv2code.jsp -> New -> Class -> FunUtils
+JSP Built-In Objects
     
