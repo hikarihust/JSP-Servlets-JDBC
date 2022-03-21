@@ -40,4 +40,16 @@ Installing Eclipse on MS Windows
     https://www.eclipse.org/downloads/packages/
     Eclipse IDE for Enterprise Java and Web Developers
     eclipse-jee-2022-03-R-win32-x86_64.zip  -> unzip and copy eclipse folder to C Driver
+Connecting Eclipse to Tomcat
+    Benefits:
+        Start Tomcat from Eclipse
+        Easily deploy Application directly to Tomcat
+    Workspace
+        C:\Users\vudinhquang\eclipse-workspace
+    Open Eclipse and at the bottom section there is a tab called servers and click on it. We do not have any servers
+        associated with our Eclipse Environment at the time. So we need to do is click on link and add new server that poits 
+        to our Tomcat that we installed
+    Apache folder and scroll to select Tomcat 9
+        Tomcat installation directly: Tell Eclipse where Tomcat is installed
+            C:\Program Files\Apache Software Foundation\Tomcat 9.0
     
