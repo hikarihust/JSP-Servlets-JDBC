@@ -83,4 +83,5 @@ JSP Expressions
         Result is included in HTML returned to browser
     http://localhost:8080/jspdemo/expression-test.jsp
 JSP Scriptlets
+JSP Declarations
     
