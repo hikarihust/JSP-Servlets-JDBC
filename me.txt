@@ -74,4 +74,12 @@ JSP Hello World
     The server canot be started because one or more of the ports are invalid
         Servers -> server.xml -> Server -> port -> change -1 to 8081
     http://localhost:8080/jspdemo/helloworld.jsp
+JSP Expressions
+    JSP Expression: <%= some Java expression %>
+    JSP Scriptlet: <% some Java code: 1 to many lines %>
+    JSP Declaration: <%! variable or method declaration %>
+    JSP Expression: 
+        Compute an expression   
+        Result is included in HTML returned to browser
+    http://localhost:8080/jspdemo/expression-test.jsp
     
