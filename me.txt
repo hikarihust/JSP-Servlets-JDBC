@@ -84,4 +84,10 @@ JSP Expressions
     http://localhost:8080/jspdemo/expression-test.jsp
 JSP Scriptlets
 JSP Declarations
+Calling a Java Class from JSP
+    Minimize the scriptlets and declarations in a JSP
+    Avoid dumping thousands of lines of code in a JSP
+    Refactor this into a separate Java class … make use of MVC
+    src/main/java -> New -> Package -> com.luv2code.jsp
+    com.luv2code.jsp -> New -> Class -> FunUtils
     
