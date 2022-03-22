@@ -143,4 +143,13 @@ Install JSTL JAR files
         Time on the server is ${stuff}
         </body>
         </html>
+JSTL Core Tags - Looping with forEach - Overview
+    catch tag: catches any throwable to occurs in the boy
+    choose tag: conditional tag that can be used for exclusive operations, similar to switch statement
+    if tag: simple if/then conditional
+    import tag: retrieves a URL and exposes its contents on the page or a variable
+    forEach tag: Iterates over a collection of values
+    forTokens tag: Iterates over a collection of tokens
+    out tag: Used in scriptlets to display output, similar to <%= … %
+JSTL Core Tags - Looping with forEach - Write some Code
     
