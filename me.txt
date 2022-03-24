@@ -284,4 +284,23 @@ Reading HTML Form Data with Servlets - Let's Write some Code
             -> Class name: StudentServlet
     Build to run web:
         student-form.html -> Run as -> Run on server
+Reading Servlet Parameters - Overview
+    Servlet Configuration Parameters
+        Our web app can make use of configuration parameters
+        Located in standard file: WEB-INF/web.xml
+Reading Servlet Parameters - Let's Write some Code
+    servletdemo/src/main/webapp/WEB-INF/web.xml: Adding some context parameters or some config infomation
+        <context-param>
+            <param-name>max-shopping-cart-size</param-name>
+            <param-value>99</param-value>
+        </context-param>
+        <context-param>
+            <param-name>project-team-name</param-name>
+            <param-value>The Coding Gurus</param-value>
+        </context-param>
+    Create a new servlet
+        Right click on com.luv2code.servletdemo -> New -> Servlet
+            -> Class name: TestParamServlet
+    Build to run web:
+        TestParamServlet.java -> Run as -> Run on server
     
