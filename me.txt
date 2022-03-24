@@ -180,4 +180,7 @@ JSTL Function Tags - length, toUpperCase and startsWith
         contains, containsIgnoreCase, split, join, escapeXml
     Every page that uses the Function tags must include this reference:
         <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+JSTL Function Tags - split and join
+    Split Function: The fn:split() function splits a String into an array of substrings based on delimiter
+    Join Function: The fn:join() function concatenates a String array into single String based on a delimiter
     
