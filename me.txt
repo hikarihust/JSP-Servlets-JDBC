@@ -164,4 +164,20 @@ JSTL Core Tags - Looping with forEach - Building HTML Tables
 JSTL Core Tags - Testing Conditionals with the IF tag
     Conditional Tests: if tag is used for a conditional test
 JSTL Core Tags - choose Tag
+
+    ==================================================================================================================
+
+                        JSP Standard Tag Library (JSTL) - Function Tags
+                    
+JSTL Function Tags - length, toUpperCase and startsWith
+    JSTL Functions - Prefix “fn”
+    Collection Length
+        length
+    String manipulation
+        toUpperCase, toLowerCase
+        substring, substringAfter, substringBefore
+        trim, replace, indexOf, startsWith, endsWith
+        contains, containsIgnoreCase, split, join, escapeXml
+    Every page that uses the Function tags must include this reference:
+        <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
     
