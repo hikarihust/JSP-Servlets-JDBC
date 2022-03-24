@@ -304,3 +304,35 @@ Reading Servlet Parameters - Let's Write some Code
     Build to run web:
         TestParamServlet.java -> Run as -> Run on server
     
+    ==================================================================================================================
+
+                        MVC - Build an MVC App with Servlets and JSP
+
+MVC with Servlets and JSP - Overview
+    Best Practice
+        Integrate Servlets and JSP together
+        Servlet does the business logic
+        JSP handles the presentation view
+    Benefits of MVC
+        Minimizes HTML code in Servlet
+            no more: out.println(…) in Servlet code
+        Minimize Java business logic in JSPs
+            no more large scriptlets in JSP code
+    Servlet Can Call a JSP
+        Servlet can call JSP using a request dispatcher
+    Sending Data to JSP
+        Servlet can add data to request object
+    JSP page to view data
+        JSP use JSTL to access data
+MVC with Servlets and JSP - Let's Write some Code
+    Add JSTL support to servletdemo project
+        servletdemo/src/main/webapp/WEB-INF/lib
+            javax.servlet.jsp.jstl-1.2.1.jar
+            javax.servlet.jsp.jstl-api-1.2.1.jar
+    Create Controller Servlet
+        Right click on com.luv2code.servletdemo -> New -> Servlet
+            -> Class name: MvcDemoServlet
+    Build to run:
+        Right click on MvcDemoServlet.java -> Run as -> Run on server
+    Browser: http://localhost:8080/servletdemo/MvcDemoServlet
+    
