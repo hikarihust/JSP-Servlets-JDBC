@@ -183,4 +183,59 @@ JSTL Function Tags - length, toUpperCase and startsWith
 JSTL Function Tags - split and join
     Split Function: The fn:split() function splits a String into an array of substrings based on delimiter
     Join Function: The fn:join() function concatenates a String array into single String based on a delimiter
+
+    ==================================================================================================================
+
+                        Build a Multi-Lingual App with JSTL - i18n Tags
+
+Multi-Lingual / Internationalization Overview
+    Internationalization is the process of designing an application
+        So it can be adapted to various languages/regions
+        Without changes to the source code
+    What is I18N?
+        The term Internationalization is frequently abbreviated as I18N
+        There are 18 letters between the first “i” and the last “n” 
+    Formatting Messages
+        We need to create translated versions of each label (no magic here)
+        Based on user’s language selection, system will include appropriate text
+        [greet]
+        [first_name]: John
+        [last_name]: Doe
+        [welcome_message]
+Multi-Lingual / Internationalization Messages
+    Step 1: Create Resource Files
+        Translated versions of our labels
+        We will need to use Google Translate or similar translator service
+        Must name the file using the locale
+        Locale = Language Code + Country Code
+        File name must follow specific format
+            <our project file name>_LANGUAGECODE_COUNTRYCODE.properties
+        Examples:   
+            mylabels_es_ES.properties
+            mylabels_de_DE.properties
+            mylabels_en_GB.properties
+        Language Codes based on ISO Standard 639-1 (2 letter code)
+            https://en.wikipedia.org/wiki/ISO_639-1
+        Country Codes based on ISO Standard 3166-2 (2 letter code)
+            https://en.wikipedia.org/wiki/ISO_3166-2
+    Step 2: Create JSP Page with labels
+    Step 3: Update JSP page to change locale based on user selection
+Build a Multi-Lingual App with JSTL - Step 1
+    Create i18n.resources package
+        solution-jsp-jstl-multi-lingual-app->src.com.luv2code.jsp.tagdemo -> New -> Package: i18n.resources
+    Create file in i18n.resources package
+        src.com.luv2code.jsp.tagdemo.i18n.resources -> New -> Other -> General -> File
+            mylabels.properties
+                Default resource file, there no reference to a specific locale.
+                Basically the file will be used if we do nor have a locale file for a given language
+            mylabels_es_ES.properties
+            mylabels_de_DE.properties
+Build a Multi-Lingual App with JSTL - Step 2
+Build a Multi-Lingual App with JSTL - Step 3
+    fmt:setBundle
+        Tell JSP page which resource bundle to use
+        basename: tell the base name of the file and then JSP will append the appropriate locale
+            mylabels_<theLocale>.properties
+            so can read all properties based on the appropriate locale that user selected
+        <fmt:setBundle basename="com.luv2code.jsp.tagdemo.i18n.resources.mylabels" />
     
