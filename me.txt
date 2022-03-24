@@ -238,4 +238,24 @@ Build a Multi-Lingual App with JSTL - Step 3
             mylabels_<theLocale>.properties
             so can read all properties based on the appropriate locale that user selected
         <fmt:setBundle basename="com.luv2code.jsp.tagdemo.i18n.resources.mylabels" />
+
+    ==================================================================================================================
+
+                        Servlet Fundamentals
+    
+Hello World Servlet - Overview
+    Java class that is processed on the server
+    Java class generates HTML that is returned to browser
+    Can read HTML form data, use cookies and sessions etc…
+    At a high-level, similar functionality to JSPs
+Hello World Servlet - Let's Write some Code
+    File -> New -> Dynamic Web Project -> -> create Project: servletdemo
+        Next -> Next 
+            Generate web.xml deployment descriptor
+    Create a new servlet
+        servletdemo -> New -> Servlet 
+            -> Java package: com.luv2code.servletdemo
+            -> Class name: HelloWorldServlet
+    Build to run web:
+        Right click on HelloWorldServlet.java -> Run as -> Run on server
     
