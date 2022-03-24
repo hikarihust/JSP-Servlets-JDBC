@@ -163,4 +163,5 @@ JSTL Core Tags - Looping with forEach - Building HTML Tables
         Right Click -> Source -> Generate Getters and Setters
 JSTL Core Tags - Testing Conditionals with the IF tag
     Conditional Tests: if tag is used for a conditional test
+JSTL Core Tags - choose Tag
     
