@@ -152,4 +152,13 @@ JSTL Core Tags - Looping with forEach - Overview
     forTokens tag: Iterates over a collection of tokens
     out tag: Used in scriptlets to display output, similar to <%= … %
 JSTL Core Tags - Looping with forEach - Write some Code
+JSTL Core Tags - Looping with forEach - Building HTML Tables
+    src/main/java -> New -> Package -> com.luv2code.jsp.tagdemo
+    com.luv2code.jsp.tagdemo -> New -> Class -> Student
+    Student class:
+        private String firstName;
+        private String lastName;
+        private boolean goldCustomer;
+        Right Click -> Source -> Generate Constructor using Field
+        Right Click -> Source -> Generate Getters and Setters
     
