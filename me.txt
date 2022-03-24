@@ -161,4 +161,6 @@ JSTL Core Tags - Looping with forEach - Building HTML Tables
         private boolean goldCustomer;
         Right Click -> Source -> Generate Constructor using Field
         Right Click -> Source -> Generate Getters and Setters
+JSTL Core Tags - Testing Conditionals with the IF tag
+    Conditional Tests: if tag is used for a conditional test
     
