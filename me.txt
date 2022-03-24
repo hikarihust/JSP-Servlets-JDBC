@@ -258,4 +258,30 @@ Hello World Servlet - Let's Write some Code
             -> Class name: HelloWorldServlet
     Build to run web:
         Right click on HelloWorldServlet.java -> Run as -> Run on server
+Comparing Servlets and JSP - What's the Difference
+    JSPs
+        HTML file with .jsp extension
+        Contains static HTML
+        JSP to generate HTML
+        Has built-in JSP objects
+    Servlets
+        Java class file
+        Generate all HTML
+        More steps to access web objects
+    Which One?
+        Can use either one for building Java web apps
+        Build entire site using only Servlets … or
+        Build entire site using only JSPs
+    Best Practice
+        Integrate them both together!
+            Servlet does the business logic
+            JSP handles the presentation view
+        Model-View-Controller (MVC) Design Pattern
+Reading HTML Form Data with Servlets - Let's Write some Code
+    servletdemo/src/main/webapp -> New -> File -> create student-form.html
+    Create a new servlet
+        Right click on com.luv2code.servletdemo -> New -> Servlet
+            -> Class name: StudentServlet
+    Build to run web:
+        student-form.html -> Run as -> Run on server
     
