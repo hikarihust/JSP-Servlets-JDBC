@@ -345,4 +345,6 @@ MVC with Servlets and JSP - Part 1 - Create Student Class
         private String email;
         Right Click -> Source -> Generate Constructor using Field
         Right Click -> Source -> Generate Getters and Setters
+MVC with Servlets and JSP - Part 2 - Create StudentDataUtil(Model)
+    com.luv2code.servletdemo.mvctwo -> New -> Class -> create StudentDataUtil
     
