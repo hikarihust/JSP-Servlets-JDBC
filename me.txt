@@ -349,4 +349,12 @@ MVC with Servlets and JSP - Part 2 - Create StudentDataUtil(Model)
     com.luv2code.servletdemo.mvctwo -> New -> Class -> create StudentDataUtil
 MVC with Servlets and JSP - Part 3 - Create MVC Servlet(Controller)
     com.luv2code.servletdemo.mvctwo -> New -> Servlet -> MvcDemoServletTwo
+MVC with Servlets and JSP - Part 4 - Create JSP View with HTML Tables
+    servletdemo/src/main/webapp -> New -> File -> create view_students_two.jsp
+    Build to run:
+        Right click on MvcDemoServletTwo.java -> Run as -> Run on server
+    Browser: http://localhost:8080/servletdemo/MvcDemoServletTwo
+    servletdemo/src/main/webapp -> New -> File -> create index.html
+    Build to run:
+        Right click on index.html -> Run as -> Run on server
     
