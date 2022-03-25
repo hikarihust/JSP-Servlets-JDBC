@@ -347,4 +347,6 @@ MVC with Servlets and JSP - Part 1 - Create Student Class
         Right Click -> Source -> Generate Getters and Setters
 MVC with Servlets and JSP - Part 2 - Create StudentDataUtil(Model)
     com.luv2code.servletdemo.mvctwo -> New -> Class -> create StudentDataUtil
+MVC with Servlets and JSP - Part 3 - Create MVC Servlet(Controller)
+    com.luv2code.servletdemo.mvctwo -> New -> Servlet -> MvcDemoServletTwo
     
