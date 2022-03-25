@@ -335,4 +335,14 @@ MVC with Servlets and JSP - Let's Write some Code
     Build to run:
         Right click on MvcDemoServlet.java -> Run as -> Run on server
     Browser: http://localhost:8080/servletdemo/MvcDemoServlet
+MVC with Servlets and JSP - Part 1 - Create Student Class
+    Create mvctwo package
+        com.luv2code.servletdemo -> New -> package -> mvctwo
+    com.luv2code.servletdemo.mvctwo -> New -> Class -> create Student
+    class Student -> Right click
+        private String firstName;
+        private String lastName;
+        private String email;
+        Right Click -> Source -> Generate Constructor using Field
+        Right Click -> Source -> Generate Getters and Setters
     
