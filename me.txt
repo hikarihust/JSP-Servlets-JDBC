@@ -358,3 +358,22 @@ MVC with Servlets and JSP - Part 4 - Create JSP View with HTML Tables
     Build to run:
         Right click on index.html -> Run as -> Run on server
     
+    ==================================================================================================================
+
+                        Build A Complete Database Web App with JDBC
+        
+Road map
+    Set up Database Dev Environment
+    List Students 
+    Add a new Student
+    Update a new Student
+    Delete a new Student
+Setting up our Project Database with Sample Data
+    Create a new MySQL user for our app
+    01-create-user.sql
+        user id: webstudent
+        password: webstudent
+    02-student-tracker.sql
+        Create a new database table: student
+        Load table with sample data
+    
