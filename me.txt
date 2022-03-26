@@ -376,4 +376,35 @@ Setting up our Project Database with Sample Data
     02-student-tracker.sql
         Create a new database table: student
         Load table with sample data
+Setup Tomcat Datasource for Connection Pooling
+    Topics
+        Database Connections in web apps
+        Database Connection Pools
+        Setting up a Tomcat Database Connection Pool
+    Database Connection in Tomcat
+        Download JDBC Driver JAR file
+        Define connection pool in META-INF/context.xml
+        Get connection pool reference in Java code
+    Step 1: Download JDBC Driver JAR file
+        http://dev.mysql.com/downloads
+        Place the JAR file in our app’s WEB-INF/lib
+    Step 2: Define connection pool: context.xml
+        File: WebContent/META-INF/context.xml
+    Step 3: Get connection pool in Java code
+        Leverage resource injection with the Servlets
+        This means that Tomcat will AUTOMAGICALLY
+            Set the connection pool / datasource on our servlet
+Test Tomcat Connection Pooling
+    File -> New -> Dynamic Web Project -> create Project: web-student-tracker
+    Copy JDBC jar file to "web-student-tracker/src/main/webapp/WEB-INF/lib"
+        https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.13.zip
+        mysql-connector-java-8.0.13.jar -> web-student-tracker/src/main/webapp/WEB-INF/lib
+    context.xml -> web-student-tracker/src/main/webapp/META-INF
+    Create new package in "src/main/java"
+        New -> Package -> com.luv2code.web.jdbc
+    com.luv2code.web.jdbc -> New -> Servlet -> TestServlet
+        uncheck: Constructor from superclass, doPost   
+    SELECT * FROM mysql.user;
+    Build to run:
+        Right click on com.luv2code.web.jdbc/TestServlet.java -> Run as -> Run on server
     
