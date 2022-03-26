@@ -407,4 +407,20 @@ Test Tomcat Connection Pooling
     SELECT * FROM mysql.user;
     Build to run:
         Right click on com.luv2code.web.jdbc/TestServlet.java -> Run as -> Run on server
+List Students - Overview
+    Create Student class in src.com.luv2code.web.jdbc package
+        src.com.luv2code.web.jdbc -> New -> Class -> Student
+    Student class:
+        private int id;
+        private String firstName;
+        private String lastName;
+        private String email;
+        Create constructors: 
+            Right click on Student class -> Source -> Generate Constructor using Field
+            Right click on Student class -> Source -> Generate Constructor using Field uncheck "id" Field
+        Create Getters and Setters
+            Right click on Student class -> Source -> Generate Getters and Setters
+        Add toString method
+            Right click on Student class -> Source -> Generate toString()
+            toString method is very usefull for debugging and logging infomation to dump student infomation
     
