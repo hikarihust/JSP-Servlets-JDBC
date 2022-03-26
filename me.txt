@@ -423,4 +423,7 @@ List Students - Overview
         Add toString method
             Right click on Student class -> Source -> Generate toString()
             toString method is very usefull for debugging and logging infomation to dump student infomation
+List Students - Creating the JDBC Code
+    Create StudentDbUtil class in src.com.luv2code.web.jdbc package
+        src.com.luv2code.web.jdbc -> New -> Class -> StudentDbUtil
     
