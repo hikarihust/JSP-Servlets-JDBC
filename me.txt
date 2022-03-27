@@ -445,4 +445,8 @@ List Students - Developing the JSP
     Build to run:
         Right click on StudentControllerServlet -> Run as -> Run on server
     Browser: http://localhost:8080/web-student-tracker/StudentControllerServlet
+List Students - Making it Pretty with Cascading Style Sheets (CSS)
+    Create css folder
+        create in src/main/webapp 
+    Copy style.css into src/main/webapp/css folder
     
