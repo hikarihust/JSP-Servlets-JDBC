@@ -426,4 +426,14 @@ List Students - Overview
 List Students - Creating the JDBC Code
     Create StudentDbUtil class in src.com.luv2code.web.jdbc package
         src.com.luv2code.web.jdbc -> New -> Class -> StudentDbUtil
+List Students - Building the Servlet
+    Create a new servlet
+        src.com.luv2code.web.jdbc -> New -> Servlet 
+            -> Java package: src.com.luv2code.web.jdbc
+            -> Class name: StudentControllerServlet
+            uncheck: Constructor from superclass, doPost  
+    Create init method
+        Right click on StudentControllerServlet -> Source -> Override/Implement Methods -> GenericServlet -> init()
+    We would normally do on a constructor, when we work with servlets we place that code inside of the init method and something
+        that we inherit from generic servlet and we can override it and add our own custom functionlity 
     
