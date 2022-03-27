@@ -436,4 +436,13 @@ List Students - Building the Servlet
         Right click on StudentControllerServlet -> Source -> Override/Implement Methods -> GenericServlet -> init()
     We would normally do on a constructor, when we work with servlets we place that code inside of the init method and something
         that we inherit from generic servlet and we can override it and add our own custom functionlity 
+List Students - Developing the JSP
+    webapp -> New -> File -> create list-students.jsp
+    Add JSTL support to servletdemo project
+        src/main/webapp/WEB-INF/lib
+            javax.servlet.jsp.jstl-1.2.1.jar
+            javax.servlet.jsp.jstl-api-1.2.1.jar
+    Build to run:
+        Right click on StudentControllerServlet -> Run as -> Run on server
+    Browser: http://localhost:8080/web-student-tracker/StudentControllerServlet
     
