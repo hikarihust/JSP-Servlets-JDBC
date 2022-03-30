@@ -15,7 +15,7 @@ import javax.sql.DataSource;
 /**
  * Servlet implementation class StudentControllerServlet
  */
-@WebServlet("/StudentControllerServlet")
+@WebServlet("/")
 public class StudentControllerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
