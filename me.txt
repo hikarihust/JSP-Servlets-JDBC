@@ -461,4 +461,14 @@ List Students - Adding a Welcome File
     Build to run:
         Right click on StudentControllerServlet -> Run as -> Run on server
     Open Browser: http://localhost:8080/web-student-tracker/
+Add Student - Overview
+    To do list
+    1. Update list-students.jsp
+        New “Add Student” button
+    2. Create HTML form for new student
+    3. Update StudentControllerServlet
+        Handle request to add student
+    4. Update StudentDbUtil
+        Add new JDBC method: addStudent(…)
+Add Student - Setting up the Button
     
