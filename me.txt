@@ -474,4 +474,15 @@ Add Student - Setting up the Button
 Add Student - Constructing the HTML Form
 Add Student - Developing the Servlet
 Add Student - Creating the JDBC Code
+Update Student - Overview
+    To Do List
+    1. Update list-students.jsp
+        New “Update” link 
+    2. Create update-student-form.jsp
+        Prepopulate the form
+    3. Update StudentControllerServlet
+        Handle request to update student
+    4. Update StudentDbUtil
+        Add new JDBC method: updateStudent(…)
+Update Student - Creating the Update Link
     
