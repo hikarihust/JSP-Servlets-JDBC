@@ -1,6 +1,7 @@
 package com.luv2code.web.jdbc;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.annotation.Resource;
 import javax.servlet.RequestDispatcher;
@@ -66,11 +67,23 @@ public class AddStudentControllerServlet extends HttpServlet {
 			studentDbUtil.addStudent(theStudent);
 					
 			// send back to main page (the student list)
-			
+			listStudents(request, response);
 		}
 		catch (Exception exc) {
 			throw new ServletException(exc);
 		}
+	}
+
+
+	private void listStudents(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		// get students from db util
+		List<Student> students = studentDbUtil.getStudents();
+		
+		// add students to the request
+		request.setAttribute("STUDENT_LIST", students);
+				
+		// redirect to list page
+		response.sendRedirect("list");
 	}
 
 }
