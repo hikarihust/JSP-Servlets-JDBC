@@ -6,6 +6,8 @@
 
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<link type="text/css" rel="stylesheet" href="css/add-student-style.css">	
+	
+	<script type="text/javascript" src="js/student-validation.js"></script>	
 </head>
 
 <body>
@@ -16,7 +18,7 @@
 	</div>
 	<div id="container">
 		<h3>Update Student</h3>
-		<form action="edit" method="POST">
+		<form action="edit" method="POST" name="studentForm" onSubmit="return validateForm()">
 			<input type="hidden" name="studentId" value="${THE_STUDENT.id}" />
 			<table>
 				<tbody>

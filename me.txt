@@ -496,3 +496,12 @@ Delete Student - Overview
 Delete Student - Creating the Delete Link
 Delete Student - Developing the Servlet and JDBC Code
     
+    ==================================================================================================================
+
+                        Appendix
+
+How to prevent empty fields in the Student Tracker project
+    Create JavaScript file for validation
+    Reference JavaScript file in JSP page
+    Update form attributes
+    

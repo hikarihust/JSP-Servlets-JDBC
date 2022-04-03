@@ -6,6 +6,8 @@
 
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<link type="text/css" rel="stylesheet" href="css/add-student-style.css">	
+	
+	<script type="text/javascript" src="js/student-validation.js"></script>	
 </head>
 
 <body>
@@ -16,7 +18,7 @@
 	</div>
 	<div id="container">
 		<h3>Add Student</h3>
-		<form action="add" method="POST">
+		<form action="add" method="POST" name="studentForm" onSubmit="return validateForm()">
 			<table>
 				<tbody>
 					<tr>
