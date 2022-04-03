@@ -504,4 +504,8 @@ How to prevent empty fields in the Student Tracker project
     Create JavaScript file for validation
     Reference JavaScript file in JSP page
     Update form attributes
+How to add Search features to the App
+    Create the HTML form
+    Add routing logic in StudentControllerServlet
+    Add method in the StudentDbUtil to perfom search
     

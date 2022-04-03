@@ -26,6 +26,12 @@
 				   onclick="window.location.href='add'; return false;"
 				   class="add-student-button"
 			/>
+			
+            <!--  add a search box -->
+			<form action="search" method="GET">
+                Search student: <input type="text" name="theSearchName" />
+                <input type="submit" value="Search" class="add-student-button" />
+            </form>
 	
 			<table>
 			
