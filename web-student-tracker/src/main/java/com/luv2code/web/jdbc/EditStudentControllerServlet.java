@@ -76,7 +76,12 @@ public class EditStudentControllerServlet extends HttpServlet {
 		Student theStudent = new Student(id, firstName, lastName, email);
 		
 		// perform update on database
-		studentDbUtil.updateStudent(theStudent);
+		try {
+			studentDbUtil.updateStudent(theStudent);
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		
 		// send them back to the "list students" page
 		try {
