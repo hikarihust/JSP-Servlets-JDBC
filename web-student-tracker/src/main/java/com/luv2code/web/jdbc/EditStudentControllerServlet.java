@@ -1,6 +1,7 @@
 package com.luv2code.web.jdbc;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.annotation.Resource;
 import javax.servlet.RequestDispatcher;
@@ -65,8 +66,36 @@ public class EditStudentControllerServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		// read student info from form data
+		int id = Integer.parseInt(request.getParameter("studentId"));
+		String firstName = request.getParameter("firstName");
+		String lastName = request.getParameter("lastName");
+		String email = request.getParameter("email");
+		
+		// create a new student object
+		Student theStudent = new Student(id, firstName, lastName, email);
+		
+		// perform update on database
+		studentDbUtil.updateStudent(theStudent);
+		
+		// send them back to the "list students" page
+		try {
+			listStudents(request, response);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private void listStudents(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		// get students from db util
+		List<Student> students = studentDbUtil.getStudents();
+		
+		// add students to the request
+		request.setAttribute("STUDENT_LIST", students);
+				
+		// redirect to list page
+		response.sendRedirect("list");
 	}
 
 }
