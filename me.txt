@@ -488,4 +488,10 @@ Update Student - Creating the Update Link
 Update Student - Prepopulating the HTML Form
 Update Student - Developing the Servlet
 Update Student - Creating the JDBC Code
+
+Delete Student - Overview
+    1. Add “Delete” link on JSP
+    2. Add code for “Delete” to StudentControllerServlet
+    3. Add code for “Delete” to StudentDbUtil
+Delete Student - Creating the Delete Link
     
